@@ -1,0 +1,25 @@
+# PowerShell-generated files
+*.ps1
+*.psm1
+*.psd1
+*.ps1xml
+*.xaml.ps1
+*.tests.ps1
+
+# Logs and output
+*.log
+*.out
+*.bak
+*.tmp
+
+# IDE and environment files
+.vscode/
+.idea/
+*.suo
+*.user
+*.ncb
+*.dbmdl
+*.DS_Store
+
+# AgenticRequest logs
+AgenticLogs/

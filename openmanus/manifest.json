@@ -1,0 +1,7 @@
+{
+  "name": "Sweep-And-Verify",
+  "path": "scripts/Sweep-And-Verify.ps1",
+  "dryRun": false,
+  "logOutput": true,
+  "tags": ["file-io", "verification"]
+}

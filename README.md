@@ -36,3 +36,7 @@ This project is unusual in that its sole purpose is to work on other GitHub proj
 Edward J. Reusser  
 Flashpoint Woodworking  
 Oceanside, CA
+
+
+## Useage examples
+.\ValidateOutput.ps1 -Path .\output\ -Recurse
