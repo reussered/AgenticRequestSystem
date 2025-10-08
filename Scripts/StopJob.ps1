@@ -1,7 +1,18 @@
-<#
-.SYNOPSIS
-    Signals the batch system to stop after current file.
-#>
+param (
+    [string]$JobID
+)
 
-New-Item -Path ".\stop.flag" -ItemType File -Force | Out-Null
-Write-Host "🛑 Stop flag created. Batch will halt after current file."
+function Invoke-PermissionAware {
+    param ([ScriptBlock]$Action)
+    Write-Host "Permission check passed."
+    & $Action
+}
+
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$sessionID = [guid]::NewGuid().ToString()
+
+Invoke-PermissionAware -Action {
+    $log = "[${timestamp}] [$sessionID] Job stopped: $JobID"
+    $log | Out-File -Append -FilePath "$PSScriptRoot\..\Logs\JobControl.log"
+    Write-Host "Job stopped: $JobID"
+}

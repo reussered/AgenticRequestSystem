@@ -1,24 +1,11 @@
-<#
-.SYNOPSIS
-    Logs file actions with metadata.
-.DESCRIPTION
-    Appends structured JSON entries to log file.
-#>
-
 param (
     [string]$Action,
-    [string]$FilePath,
-    [string]$Status,
-    [string]$LogPath,
-    [string]$Message = ""
+    [string]$FilePath
 )
 
-$entry = @{
-    timestamp = (Get-Date -Format 's')
-    action    = $Action
-    file      = $FilePath
-    status    = $Status
-    message   = $Message
-}
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$sessionID = [guid]::NewGuid().ToString()
+$log = "[${timestamp}] [$sessionID] $Action: $FilePath"
 
-$entry | ConvertTo-Json -Depth 3 | Add-Content -Path $LogPath
+$log | Out-File -Append "$PSScriptRoot\..\Logs\FileActions.log"
+Write-Host "Logged: $log"
