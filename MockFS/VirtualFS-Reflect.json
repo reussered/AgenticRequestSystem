@@ -1,0 +1,78 @@
+﻿{
+    "Structure":  [
+                      {
+                          "Path":  "input",
+                          "SHA256":  "",
+                          "Size":  0,
+                          "Type":  "Directory",
+                          "LastModified":  "2025-10-08T14:08:32.5376447Z"
+                      },
+                      {
+                          "Path":  "logs",
+                          "SHA256":  "",
+                          "Size":  0,
+                          "Type":  "Directory",
+                          "LastModified":  "2025-10-08T14:08:32.5466755Z"
+                      },
+                      {
+                          "Path":  "output",
+                          "SHA256":  "",
+                          "Size":  0,
+                          "Type":  "Directory",
+                          "LastModified":  "2025-10-08T21:30:35.2973563Z"
+                      },
+                      {
+                          "Path":  "Scripts",
+                          "SHA256":  "",
+                          "Size":  0,
+                          "Type":  "Directory",
+                          "LastModified":  "2025-10-08T13:51:39.3115291Z"
+                      },
+                      {
+                          "Path":  "VirtualFS-Reflect.json",
+                          "SHA256":  "4C574FC2A6415E2A6E4D66702A1A0CF8C03966188BC1E78D62CDD88E771D3B22",
+                          "Size":  1086691,
+                          "Type":  "File",
+                          "LastModified":  "2025-10-08T18:13:47.0724946Z"
+                      },
+                      {
+                          "Path":  "output\\example1.txt",
+                          "SHA256":  "8DE21301C7C8213C5034CBE578C6B8FCAC24D0F0A17E439439FC5D6C0BBDE03D",
+                          "Size":  20,
+                          "Type":  "File",
+                          "LastModified":  "2025-10-08T21:30:35.2983549Z"
+                      },
+                      {
+                          "Path":  "output\\example2.txt",
+                          "SHA256":  "4719660E6F2077B225C3DD7C4AAB4BD461165A335030D8B2E28D4D47A58B78F6",
+                          "Size":  20,
+                          "Type":  "File",
+                          "LastModified":  "2025-10-08T21:30:35.3003539Z"
+                      },
+                      {
+                          "Path":  "Scripts\\mock-cleanup.ps1",
+                          "SHA256":  "C9DA464B487BB7A19266DAA7662A91A266141EE1A608C00A33DBFAA7A61B2BBF",
+                          "Size":  241,
+                          "Type":  "File",
+                          "LastModified":  "2025-10-08T13:51:11.7562094Z"
+                      },
+                      {
+                          "Path":  "Scripts\\mock-transform.ps1",
+                          "SHA256":  "78C63A5948EA8E7A8472B13AD24DAF721DD0C9D807939073B50006D66B70E4CE",
+                          "Size":  439,
+                          "Type":  "File",
+                          "LastModified":  "2025-10-08T13:50:04.2807593Z"
+                      },
+                      {
+                          "Path":  "Scripts\\mock-validate.ps1",
+                          "SHA256":  "B1D9DEE0FD6B028E623FC955CB8D829B8CA7E51E7B10DC2234F54307633BE087",
+                          "Size":  353,
+                          "Type":  "File",
+                          "LastModified":  "2025-10-08T13:52:14.5389337Z"
+                      }
+                  ],
+    "Timestamp":  "2025-10-08T14:47:39.3500281-07:00",
+    "FileCount":  6,
+    "RootPath":  "F:\\GitHub\\AgenticRequestSystem\\MockFS",
+    "SessionID":  "8218bb2c-7a58-4a4d-bf70-db5d3a07c8e2"
+}

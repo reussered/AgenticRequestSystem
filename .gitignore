@@ -5,6 +5,7 @@
 *.ps1xml
 *.xaml.ps1
 *.tests.ps1
+DirectoryStructure.txt
 
 # Logs and output
 *.log
@@ -23,3 +24,4 @@
 
 # AgenticRequest logs
 AgenticLogs/
+
